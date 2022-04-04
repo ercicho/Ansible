@@ -8,6 +8,12 @@
 - ansible-playbook --syntax-check sample.yml
 ```
 
+#Check the syntax of your code passing variable that are expected
+
+```diff
+- ansible-playbook --syntax-check -e"passwd_in_hosts=localhost" sample.yml
+```
+
 #Check the syntax of your code and result. 0 mean no error
 
 ```diff
