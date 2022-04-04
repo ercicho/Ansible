@@ -20,3 +20,18 @@
 - ansible-playbook --syntax-check sample.yml
 - echo $?
 ```
+
+<h4 align="Left">Ansible TS</h4><br />
+
+#Enable DEBUG on Ansible
+
+```diff
+- export ANSIBLE_DEBUG=1
+```
+
+#Enable DEBUG on Ansible choosing the level of verbositi. More v increase the level
+
+```diff
+- export ANSIBLE_DEBUG=0
+- ansible localhost -v <command, ex. -m ping>
+```
