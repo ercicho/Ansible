@@ -35,3 +35,9 @@
 - export ANSIBLE_DEBUG=0
 - ansible localhost -v <command, ex. -m ping>
 ```
+
+#Enable DEBUG on Ansible choosing the level of verbositi
+
+```diff
+- ANSIBLE-VERBOSITY=1 nasible localhost -m ping
+```
